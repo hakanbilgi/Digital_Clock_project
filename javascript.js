@@ -1,6 +1,10 @@
-const digital = document.querySelector("#clock");
-digital.innerText = new Date().toLocaleTimeString("en-GB");
+
+const clockDviv = document.querySelector("#clock");
+const dateDiv = document.querySelector("#date");
 
 setInterval(() => {
-  digital.innerText = new Date().toLocaleTimeString("en-GB");
-}, 150);
+  clockDviv.innerText = new Date().toLocaleTimeString("tr-TR");
+}, 1000);
+setInterval(() => {
+  dateDiv.innerText = new Date().toLocaleDateString("tr-TR");
+}, 1000);
